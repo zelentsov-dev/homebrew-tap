@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  formula:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: Homebrew/actions/setup-homebrew@a657b8b0cd35d0f65cce41fce9b24cf054b49869
+      - run: brew style zelentsov-dev/tap/apple-ads-mcp
+      - run: brew audit --strict --online zelentsov-dev/tap/apple-ads-mcp
+      - run: brew install zelentsov-dev/tap/apple-ads-mcp
+      - run: brew test zelentsov-dev/tap/apple-ads-mcp
