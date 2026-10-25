@@ -5,21 +5,21 @@ class AppleAdsMcp < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zelentsov-dev/apple-ads-mcp/releases/download/v0.3.7/apple-ads-mcp_darwin_arm64_0.3.7.tar.gz"
-      sha256 "8ec5bff76a810476e869f960b85e5fd195d51438f403ae9905430cce7d9270fa"
+      url "https://github.com/zelentsov-dev/apple-ads-mcp/releases/download/v0.3.8/apple-ads-mcp_darwin_arm64_0.3.8.tar.gz"
+      sha256 "b8dfbedd7270c6ccefa3d9a4c236d4b4f1dc2bab51297e3739dfe16456c15b8c"
     else
-      url "https://github.com/zelentsov-dev/apple-ads-mcp/releases/download/v0.3.7/apple-ads-mcp_darwin_amd64_0.3.7.tar.gz"
-      sha256 "3b3ed20ff4296a46f44aea81405f864b1fb4c95ded701dd45baaa9c910f904bd"
+      url "https://github.com/zelentsov-dev/apple-ads-mcp/releases/download/v0.3.8/apple-ads-mcp_darwin_amd64_0.3.8.tar.gz"
+      sha256 "aed2c468c1bbb4556ca95def192e7bf7b696b8ac218007bdfc84aab32530789f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/zelentsov-dev/apple-ads-mcp/releases/download/v0.3.7/apple-ads-mcp_linux_arm64_0.3.7.tar.gz"
-      sha256 "72bf0444bbf4311eb256602b680f6fb6a1912493db105a696370be664f081052"
+      url "https://github.com/zelentsov-dev/apple-ads-mcp/releases/download/v0.3.8/apple-ads-mcp_linux_arm64_0.3.8.tar.gz"
+      sha256 "ce1abf2dd9339ac90c1d0e447b0ac53991df50accb3901662e4c1a627c4c8879"
     else
-      url "https://github.com/zelentsov-dev/apple-ads-mcp/releases/download/v0.3.7/apple-ads-mcp_linux_amd64_0.3.7.tar.gz"
-      sha256 "8e89d2889c950635bb9783f40ee0b72e49d1ebb0f4d11323c7f164f764981a46"
+      url "https://github.com/zelentsov-dev/apple-ads-mcp/releases/download/v0.3.8/apple-ads-mcp_linux_amd64_0.3.8.tar.gz"
+      sha256 "84ecdeea4e616f8348aae9fe2200f592fe4c75833c9158fea328944ddcc5911e"
     end
   end
 
